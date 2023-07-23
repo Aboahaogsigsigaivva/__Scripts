@@ -37,7 +37,7 @@ FarmingTab:AddButton("Delete Lick", function()
     end
   end
 end)
-FarmingTab:AddButton("Auto Escape [Need all 15 teeth]", function()
+FarmingTab:AddButton("Auto Escape [Need all 14 teeth]", function()
   workspace.EndingDoor.CoreInserter.MainOval.CorePrompt.HoldDuration = 0.1
   game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 0
   wait(.5)
