@@ -97,6 +97,30 @@ local EspEntityToggle = FarmingTab:AddSwitch("Many wins in 1 final [Beta]", func
     end
   end
 end)
+local EspEntityToggle = FarmingTab:AddSwitch("Advance auto win [Many Win [Dont Move]]", function(state)
+  workspace.BoxGame.TubeUnion.Size = Vector3.new(0.1, 0.1, 0.1)
+  settings = state
+  if settings then
+    while wait() and settings do
+      for _, v in pairs(workspace.Teeth:GetChildren()) do
+        if v:IsA('Model') then
+          for _, x in pairs(v:GetChildren()) do
+            if x.Transparency == 0 then
+              game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                x.CFrame wait(.2) x.ProximityPrompt.HoldDuration = 0.1 wait(.2) x.ProximityPrompt.MaxActivationDistance = 9 wait(.2) fireproximityprompt(x.ProximityPrompt)
+            end
+            if x.Transparency == 1 then
+              warn('all teeth were collected')
+              break
+            end
+          end
+        end
+      end
+      game:GetService("Players").LocalPlayer.PlayerGui.EndingGui.Enabled = false
+      game:GetService("ReplicatedStorage").AttemptEscape:FireServer()
+    end
+  end
+end)
 local EspEntityToggle = FarmingTab:AddSwitch("Esp Entity", function(state)
   local esp = Instance.new('Highlight')
   esp.Name = 'EspEntity'
