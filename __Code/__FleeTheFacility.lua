@@ -1,1 +1,229 @@
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function()return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...)local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30)if (v1(v30,2)==79) then v19=v0(v3(v30,1,1));return "";else local v68=0;local v69;while true do if (v68==0) then v69=v2(v0(v30,16));if v19 then local v96=v5(v69,v19);v19=nil;return v96;else return v69;end break;end end end end);local function v20(v31,v32,v33)if v33 then local v70=(v31/((5 -3)^(v32-(2 -1))))%((3 -1)^(((v33-(2 -(1638 -(1523 + 114)))) -(v32-(620 -(499 + 56 + 64)))) + ((1328 -396) -(857 + 74)))) ;return v70-(v70%(569 -(367 + 201))) ;else local v71=0;local v72;while true do if (v71==((1992 -(68 + 997)) -((1484 -(226 + 1044)) + 713))) then v72=(1 + 1)^(v32-(1 + 0)) ;return (((v31%(v72 + v72))>=v72) and (878 -(282 + 595))) or 0 ;end end end end local function v21()local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22()local v35=0 -0 ;local v36;local v37;while true do if (v35==((281 -163) -(32 + 85))) then return (v37 * (251 + 5)) + v36 ;end if (v35==0) then v36,v37=v1(v16,v18,v18 + (1 -0) + 1 );v18=v18 + (959 -(892 + 65)) ;v35=1;end end end local function v23()local v38=0 -(0 -0) ;local v39;local v40;local v41;local v42;while true do if (v38==(350 -(87 + 263))) then v39,v40,v41,v42=v1(v16,v18,v18 + (183 -(67 + 113)) );v18=v18 + 3 + 1 ;v38=2 -(1 + 0) ;end if (v38==1) then return (v42 * (12338840 + 4438376)) + (v41 * (260471 -(195932 -(915 + 82)))) + (v40 * (1208 -((2270 -1468) + 150))) + v39 ;end end end local function v24()local v43=v23();local v44=v23();local v45=1487 -(998 + 488) ;local v46=(v20(v44,1 + 0 ,26 -6 ) * ((774 -(201 + (2318 -(760 + 987))))^((3083 -(1789 + 124)) -(116 + 1022)))) + v43 ;local v47=v20(v44,1208 -(1069 + 118) ,70 -39 );local v48=((v20(v44,32)==(1 -0)) and  -(1 + 0)) or 1 ;if (v47==(0 -(766 -(745 + 21)))) then if (v46==(0 + 0)) then return v48 * (791 -(368 + 423)) ;else local v76=(0 + 0) -0 ;while true do if (v76==(0 + 0)) then v47=19 -(10 + 8) ;v45=(0 -0) -0 ;break;end end end elseif (v47==(7874 -5827)) then return ((v46==(442 -(416 + 26))) and (v48 * ((3 -2)/(0 + (0 -0))))) or (v48 * NaN) ;end return v8(v48,v47-(1809 -786) ) * (v45 + (v46/(((4 + 436) -(145 + 293))^(482 -(44 + 386))))) ;end local function v25(v49)local v50=0;local v51;local v52;while true do if (v50==(1 + 0)) then v51=v3(v16,v18,(v18 + v49) -1 );v18=v18 + v49 ;v50=1057 -(87 + 968) ;end if (v50==((714 -(376 + 325)) -10)) then return v6(v52);end if (v50==(2 + 0)) then v52={};for v77=2 -1 , #v51 do v52[v77]=v2(v1(v3(v51,v77,v77)));end v50=1416 -(447 + 966) ;end if (v50==((0 -0) -0)) then v51=nil;if  not v49 then v49=v23();if (v49==(1817 -(1703 + (350 -236)))) then return "";end end v50=1;end end end local v26=v23;local function v27(...)return {...},v12("#",...);end local function v28()local v53=540 -(537 + 3) ;local v54;local v55;local v56;local v57;local v58;local v59;local v60;while true do if (v53==(1700 -(1419 + 281))) then v54=0;v55=nil;v53=1;end if (v53==3) then v60=nil;while true do local v79=0;while true do if (1~=v79) then else if (v54==(1 -0)) then local v103=74 -(71 + 3) ;while true do if (v103~=(2 + 0)) then else v54=4 -2 ;break;end if (v103==0) then v59=v23();v60={};v103=1;end if (v103==(1 -0)) then for v110=1,v59 do local v111=241 -(187 + 54) ;local v112;local v113;local v114;while true do if (v111~=1) then else v114=nil;while true do if (v112==(780 -(162 + 618))) then local v156=0;while true do if (v156==(1 + 0)) then v112=1 + 0 ;break;end if (v156~=(0 -0)) then else v113=v21();v114=nil;v156=1 -0 ;end end end if (v112==(1 + 0)) then if (v113==(1637 -(1373 + 263))) then v114=v21()~=(1000 -(451 + 549)) ;elseif (v113==(1 + 1)) then v114=v24();elseif (v113~=(4 -1)) then else v114=v25();end v60[v110]=v114;break;end end break;end if ((0 -0)==v111) then v112=0;v113=nil;v111=1385 -(746 + 638) ;end end end v58[3]=v21();v103=1 + 1 ;end end end break;end if (v79==(0 -0)) then if ((343 -(218 + 123))==v54) then local v104=1581 -(1535 + 46) ;while true do local v106=0 + 0 ;while true do if (v106==0) then if (v104==(1 + 0)) then return v58;end if (v104==(560 -(306 + 254))) then for v150=1 + 0 ,v23() do local v151=0 -0 ;local v152;local v153;while true do if (v151==(1467 -(899 + 568))) then local v158=0 + 0 ;while true do if ((2 -1)==v158) then v151=604 -(268 + 335) ;break;end if (v158==(290 -(60 + 230))) then v152=0;v153=nil;v158=1;end end end if (v151==1) then while true do if (v152==0) then v153=v21();if (v20(v153,573 -(426 + 146) ,1 + 0 )==(1456 -(282 + 1174))) then local v159=0;local v160;local v161;local v162;local v163;while true do if (2~=v159) then else while true do if (v160~=(811 -(569 + 242))) then else local v164=0;while true do if (v164==1) then v160=2 -1 ;break;end if (v164==(0 + 0)) then v161=v20(v153,2,3);v162=v20(v153,1028 -(706 + 318) ,1257 -(721 + 530) );v164=1;end end end if (v160==2) then if (v20(v162,1,1)==(1272 -(945 + 326))) then v163[4 -2 ]=v60[v163[2 + 0 ]];end if (v20(v162,2,702 -(271 + 429) )==1) then v163[3]=v60[v163[3]];end v160=3 + 0 ;end if (v160~=1) then else local v165=1500 -(1408 + 92) ;while true do if (v165==0) then local v173=0;while true do if (v173~=0) then else v163={v22(),v22(),nil,nil};if (v161==(1288 -(993 + 295))) then local v174=0;local v175;local v176;while true do if (v174==(1 + 0)) then while true do if (0==v175) then v176=1171 -(418 + 753) ;while true do if (v176~=(0 + 0)) then else v163[3]=v22();v163[4]=v22();break;end end break;end end break;end if (v174==0) then v175=0 + 0 ;v176=nil;v174=1;end end elseif (v161==(1 + 0)) then v163[1 + 2 ]=v23();elseif (v161==(531 -(406 + 123))) then v163[3]=v23() -(2^(1785 -(1749 + 20))) ;elseif (v161~=(1 + 2)) then else local v179=0;local v180;while true do if (v179==(1322 -(1249 + 73))) then v180=0;while true do if (v180~=(0 + 0)) then else v163[3]=v23() -(2^(1161 -(466 + 679))) ;v163[9 -5 ]=v22();break;end end break;end end end v173=2 -1 ;end if (1==v173) then v165=1901 -(106 + 1794) ;break;end end end if ((1 + 0)~=v165) then else v160=1 + 1 ;break;end end end if (v160==3) then if (v20(v162,3,3)~=1) then else v163[4]=v60[v163[11 -7 ]];end v55[v150]=v163;break;end end break;end if (v159~=(2 -1)) then else v162=nil;v163=nil;v159=116 -(4 + 110) ;end if (v159==0) then v160=584 -(57 + 527) ;v161=nil;v159=1428 -(41 + 1386) ;end end end break;end end break;end end end for v154=1,v23() do v56[v154-(104 -(17 + 86)) ]=v28();end v104=1 + 0 ;end break;end end end end if (v54==(0 -0)) then local v105=0;while true do if ((0 -0)~=v105) then else local v108=166 -(122 + 44) ;while true do if (1==v108) then v105=1;break;end if (v108==(0 -0)) then v55={};v56={};v108=3 -2 ;end end end if (v105==2) then v54=1;break;end if (1==v105) then local v109=0 + 0 ;while true do if ((1 + 0)~=v109) then else v105=3 -1 ;break;end if (v109==0) then v57={};v58={v55,v56,nil,v57};v109=1 + 0 ;end end end end end v79=1;end end end break;end if (v53==(1259 -(1043 + 214))) then v58=nil;v59=nil;v53=11 -8 ;end if (v53~=(1213 -(323 + 889))) then else v56=nil;v57=nil;v53=5 -3 ;end end end local function v29(v61,v62,v63)local v64=0;local v65;local v66;local v67;while true do if (1==v64) then v67=v61[3];return function(...)local v80=v65;local v81=v66;local v82=v67;local v83=v27;local v84=1;local v85= -1;local v86={};local v87={...};local v88=v12("#",...) -1 ;local v89={};local v90={};for v94=0,v88 do if (v94>=v82) then v86[v94-v82 ]=v87[v94 + 1 ];else v90[v94]=v87[v94 + 1 ];end end local v91=(v88-v82) + 1 ;local v92;local v93;while true do local v95=0;while true do if (v95==1) then if (v93<=3) then if (v93<=1) then if (v93==0) then v90[v92[2]]=v63[v92[3]];else local v117=v92[2];local v118=v90[v92[3]];v90[v117 + 1 ]=v118;v90[v117]=v118[v92[4]];end elseif (v93>2) then v90[v92[2]]=v92[3];else local v124=v92[2];local v125,v126=v83(v90[v124](v13(v90,v124 + 1 ,v92[3])));v85=(v126 + v124) -1 ;local v127=0;for v144=v124,v85 do v127=v127 + 1 ;v90[v144]=v125[v127];end end elseif (v93<=5) then if (v93>4) then do return;end else local v128;local v129,v130;local v131;local v132;v90[v92[2]]=v63[v92[3]];v84=v84 + 1 ;v92=v80[v84];v90[v92[2]]=v63[v92[3]];v84=v84 + 1 ;v92=v80[v84];v132=v92[2];v131=v90[v92[3]];v90[v132 + 1 ]=v131;v90[v132]=v131[v92[4]];v84=v84 + 1 ;v92=v80[v84];v90[v92[2]]=v92[3];v84=v84 + 1 ;v92=v80[v84];v132=v92[2];v129,v130=v83(v90[v132](v13(v90,v132 + 1 ,v92[3])));v85=(v130 + v132) -1 ;v128=0;for v147=v132,v85 do v128=v128 + 1 ;v90[v147]=v129[v128];end v84=v84 + 1 ;v92=v80[v84];v132=v92[2];v90[v132]=v90[v132](v13(v90,v132 + 1 ,v85));v84=v84 + 1 ;v92=v80[v84];v90[v92[2]]();v84=v84 + 1 ;v92=v80[v84];do return;end end elseif (v93==6) then v90[v92[2]]();else local v142=v92[2];v90[v142]=v90[v142](v13(v90,v142 + 1 ,v85));end v84=v84 + 1 ;break;end if (v95==0) then v92=v80[v84];v93=v92[1];v95=1;end end end end;end if (v64==0) then v65=v61[1];v66=v61[2];v64=1;end end end return v29(v28(),{},v17)(...);end v15("LOL!043O00030A3O006C6F6164737472696E6703043O0067616D6503073O00482O747047657403213O00682O7470733A2O2F706173746562696E2E636F6D2F7261772F48656B694B54416400083O0012043O00013O00122O000100023O00202O00010001000300122O000300046O000100039O0000026O000100016O00017O00",v9(),...);
+__VERSION = '1.0'
+
+
+
+
+
+-- Variables
+local ESP = Instance.new(
+    "Folder",
+    workspace
+) ESP.Name = "ESP"
+local ESPPC = Instance.new(
+    "Folder",
+    workspace
+) ESPPC.Name = "ESPComputer"
+function GetSizeOfObject(Obj)
+    if Obj:IsA("BasePart") then
+        return Obj.Size
+    elseif Obj:IsA("Model") then
+        return Obj:GetExtentsSize()
+    end
+end
+function CreateESPPart(BodyPart,r,g,b)
+    local ESPPartparent = BodyPart
+    local Box = Instance.new("BoxHandleAdornment")
+    Box.Size = GetSizeOfObject(ESPPartparent) + Vector3.new(0.1, 0.1, 0.1)
+    Box.Name = "ESPPart"
+    Box.Adornee = ESPPartparent
+    Box.Color3 = Color3.fromRGB(r,g,b)
+    Box.AlwaysOnTop = true
+    Box.ZIndex = 5
+    Box.Transparency = 0.4
+    Box.Parent = ESP
+    if BodyPart.Parent.Name == game.Players.LocalPlayer.Name then
+        Box:remove()
+        spawn (function()
+            while true do
+                wait(0.1)
+                if BodyPart ~= nil then
+                    Box:remove()
+                end
+            end
+        end)
+    end
+end
+local OldNameCall = nil
+OldNameCall = hookmetamethod(game, "__namecall", function(...)
+    local Args = {...}
+    local Self = Args[1]
+    if getnamecallmethod() == "FireServer" and tostring(Self) == "RemoteEvent" and Args[1] == "ReportPhysicsFPS" then
+        return wait(math.huge)
+    end
+    return OldNameCall(...)
+end)
+local function WalkSpeedBypass()
+  local gmt = getrawmetatable(game)
+  setreadonly(gmt, false)
+  local oldIndex = gmt.__Index
+  gmt.__Index = newcclosure(function(self, b)
+    if b == 'WalkSpeed' then
+      return 16
+    end
+    return oldIndex(self, b)
+  end)
+end
+local Map = workspace:FindFirstChild(tostring(game.ReplicatedStorage.CurrentMap.Value))
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+local plr = game:GetService("Players").LocalPlayer
+local chr = plr.Character
+local hum = chr.Humanoid
+local hrp = chr.HumanoidRootPart
+
+
+
+-- Libray settings
+getgenv().SecureMode = true
+local ArrayField = loadstring(game:HttpGet('https://pastebin.com/raw/z3Z3ea99'))()
+local Window = ArrayField:CreateWindow({
+   Name = "Infinity Hub | "..game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name,
+   LoadingTitle = "Infinity Hub",
+   LoadingSubtitle = "by infinity mercury",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "__InfinityHub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "no invite link",
+      RememberJoins = true
+   },
+   KeySystem = false,
+   KeySettings = {
+      Title = "Infinity Hub",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key",
+      SaveKey = true,
+      GrabKeyFromSite = true,
+      Actions = {
+            [1] = {
+                Text = 'Click here to copy key',
+                OnPress = function()
+                    setclipboard([[Abkdaisjd(&!428345968792j]])
+                end,
+                }
+            },
+      Key = {"Abkdaisjd(&!428345968792j"}
+   }
+})
+wait(.5)
+for _, v in pairs(game:GetService('CoreGui'):GetDescendants()) do if v:IsA('ScreenGui') and v.Name == 'ArrayField' then v.Main.Topbar.BackgroundColor3 = Color3.new(0.058823, 0.007843, 0.494117) wait(.1) v.Main.Topbar.CornerRepair.BackgroundColor3 = Color3.new(0.058823, 0.007843, 0.494117) wait(.1) v.Main.Topbar.Divider.BackgroundColor3 = Color3.new(0.007843, 0.333333, 0.6) end end
+
+
+
+-- code
+local WelcomeTab = Window:CreateTab("// Welcome //", 14203785111)
+local WelcomeSection = WelcomeTab:CreateSection("// Welcome To Infinity Hub //", false)
+local Label = WelcomeTab:CreateLabel("Welcome to Inifnity Hub, "..game.Players.LocalPlayer.Name)
+local Label = WelcomeTab:CreateLabel("Hub version: ".. __VERSION)
+local Label = WelcomeTab:CreateLabel("Made by InfinityMercury")
+
+
+
+
+
+local FarmingTab = Window:CreateTab("// Farming //", 13501204139)
+local PlayerSection = FarmingTab:CreateSection("// Player //", false)
+local Toggle = FarmingTab:CreateToggle({
+   Name = "Nefer fall hacking",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(state)
+       NeverFallHack = state
+       if NeverFallHack then
+           while wait() and NeverFallHack do
+                game:GetService("ReplicatedStorage").RemoteEvent:FireServer(
+                    "SetPlayerMinigameResult",
+                    true
+                )
+           end
+       end
+   end,
+})
+local Toggle = FarmingTab:CreateToggle({
+   Name = "No slow",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(state)
+       NoSlow = state
+       if NoSlow then
+           WalkSpeedBypass()
+           while wait() and NoSlow do
+               if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed == 8 or 3.4 then
+                    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+               end
+           end
+       end
+   end,
+})
+
+
+local PlayerSection = FarmingTab:CreateSection("// Esp //", false)
+local Toggle = FarmingTab:CreateToggle({
+   Name = "Player Esp",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(state)
+       PlayerEsp = state
+       if PlayerEsp then
+            local player = game.Players:GetChildren()
+            for i =1, #player do
+                local bodyparts = player[i].Character:GetChildren()
+                for i =1, #bodyparts do
+                    if bodyparts[i].ClassName == "Part" then
+                        if bodyparts[i].Parent:findFirstChild("BeastPowers") then
+                            CreateESPPart(bodyparts[i],255,0,0)
+                        else
+                            CreateESPPart(bodyparts[i],170,170,255)
+                        end
+                    end
+                end
+            end
+        else
+            for _, v in pairs(workspace.ESP:GetChildren()) do
+                if v:IsA('BoxHandleAdornment') then
+                    v:Destroy()
+                end
+            end
+       end
+   end,
+})
+local Toggle = FarmingTab:CreateToggle({
+   Name = "Computer Esp",
+   CurrentValue = false,
+   Flag = "Toggle1",
+   Callback = function(state)
+       ComputerEsp = state
+       if ComputerEsp then
+            local map = workspace:findFirstChild(tostring(game.ReplicatedStorage.CurrentMap.Value))
+            local children = map:GetChildren()
+                for i =1, #children do
+                if children[i].Name == "ComputerTable" then
+                    local Box = Instance.new("BoxHandleAdornment")
+                    Box.Size = GetSizeOfObject(children[i].Screen) + Vector3.new(-0.5, -0.5, -0.5)
+                    Box.Name = "ESPPart"
+                    Box.Adornee = children[i].Screen
+                    spawn (function()
+                        while true do
+                            wait(0.1)
+                            Box.Color3 = children[i].Screen.Color
+                        end
+                    end)
+                    Box.AlwaysOnTop = true
+                    Box.ZIndex = 5
+                    Box.Transparency = 0.4
+                    Box.Parent = ESPPC
+                end
+            end
+        else
+            for _, v in pairs(workspace.ESPComputer:GetChildren()) do
+                if v:IsA('BoxHandleAdornment') then
+                    v:Destroy()
+                end
+            end
+       end
+   end,
+})
