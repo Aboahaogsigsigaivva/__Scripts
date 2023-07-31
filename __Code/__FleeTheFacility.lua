@@ -152,7 +152,7 @@ local Toggle = FarmingTab:CreateToggle({
        if NoSlow then
            WalkSpeedBypass()
            while wait() and NoSlow do
-               if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed == 8 or 3.4 then
+               if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed < 16 then
                     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
                end
            end
