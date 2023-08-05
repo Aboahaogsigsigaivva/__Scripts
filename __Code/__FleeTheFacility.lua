@@ -63,6 +63,28 @@ local function WalkSpeedBypass()
     return oldIndex(self, b)
   end)
 end
+local BeastColor = Color3.new(255, 0, 0)
+local InoccentColor = Color3.new(255, 255, 255)
+local CreateEsp = function()
+  for _, v in pairs(game:GetService('Players'):GetChildren()) do
+    if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+      local Esp = Instance.new('Highlight', v.Character)
+      Esp.Name = 'EspPlayer'
+      Esp.FillTransparency = 0.5
+    end
+  end
+end
+local UpdateEsp = function()
+  for _, v in pairs(game:GetService('Players'):GetChildren()) do
+    if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+      if v.Character:findFirstChild('BeastPowers') then
+        v.Character.EspPlayer.FillColor = BeastColor
+      else
+        v.Character.EspPlayer.FillColor = InoccentColor
+      end
+    end
+  end
+end
 local Map = workspace:FindFirstChild(tostring(game.ReplicatedStorage.CurrentMap.Value))
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
@@ -110,8 +132,14 @@ local Window = ArrayField:CreateWindow({
    }
 })
 wait(.5)
-for _, v in pairs(game:GetService('CoreGui'):GetDescendants()) do if v:IsA('ScreenGui') and v.Name == 'ArrayField' then v.Main.Topbar.BackgroundColor3 = Color3.new(0.058823, 0.007843, 0.494117) wait(.1) v.Main.Topbar.CornerRepair.BackgroundColor3 = Color3.new(0.058823, 0.007843, 0.494117) wait(.1) v.Main.Topbar.Divider.BackgroundColor3 = Color3.new(0.007843, 0.333333, 0.6) end end
-
+for _, v in pairs(game:GetService('CoreGui'):GetDescendants()) do
+	if v:IsA('ScreenGui') and v.Name == 'ArrayField' then
+		v.Main.Topbar.Type.ImageTransparency = 1 wait(.1)
+        v.Main.Topbar.BackgroundColor3 = Color3.new(0.058823, 0.007843, 0.494117) wait(.1) v.Main.Topbar.CornerRepair.BackgroundColor3 = Color3.new(0.058823, 0.007843, 0.494117) wait(.1) v.Main.Topbar.Divider.BackgroundColor3 = Color3.new(0.007843, 0.333333, 0.6) wait(.25) 
+        v.Main.Topbar.Type.Image = 'http://www.roblox.com/asset/?id=7733993211'
+        v.Main.Topbar.Type.ImageTransparency = 0
+	end
+end
 
 
 -- code
@@ -151,7 +179,7 @@ local Toggle = FarmingTab:CreateToggle({
        NoSlow = state
        if NoSlow then
            WalkSpeedBypass()
-           while wait() and NoSlow do
+           while wait(.5) and NoSlow do
                if game.Players.LocalPlayer.Character.Humanoid.WalkSpeed < 16 then
                     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
                end
@@ -169,25 +197,16 @@ local Toggle = FarmingTab:CreateToggle({
    Callback = function(state)
        PlayerEsp = state
        if PlayerEsp then
-            local player = game.Players:GetChildren()
-            for i =1, #player do
-                local bodyparts = player[i].Character:GetChildren()
-                for i =1, #bodyparts do
-                    if bodyparts[i].ClassName == "Part" then
-                        if bodyparts[i].Parent:findFirstChild("BeastPowers") then
-                            CreateESPPart(bodyparts[i],255,0,0)
-                        else
-                            CreateESPPart(bodyparts[i],170,170,255)
-                        end
-                    end
-                end
-            end
-        else
-            for _, v in pairs(workspace.ESP:GetChildren()) do
-                if v:IsA('BoxHandleAdornment') then
-                    v:Destroy()
-                end
-            end
+          CreateEsp()
+          while wait() and PlayerEsp do
+            UpdateEsp()
+          end
+       else
+         for _, x in pairs(workspace:GetDescendants()) do
+           if x:IsA('Highlight') and x.Name == 'EspPlayer' then
+             x:Destroy()
+           end
+         end
        end
    end,
 })
