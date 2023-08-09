@@ -1,4 +1,4 @@
-__VERSION = '1.0'
+__VERSION = '1.8'
 
 
 
